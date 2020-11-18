@@ -1,13 +1,13 @@
-
 int val;
 int encoder0PinA = 2;
 int encoder0PinB = 3;
 int encoder0Pos = 0;
 int encoder0PinALast = LOW;
 float speedvalue=0;
-int anglevalue=0;
+float anglevalue=0;
 int count;
 int n = LOW;
+float encpulses=0;
 
 void setup() {
     Serial.begin (9600);
@@ -26,7 +26,12 @@ void loop() {
       anglevalue=Serial.parseInt();
       Serial.print("The Angle is ");
       Serial.println(anglevalue);
+      encpulses=anglevalue*(1600.0/360.0);
+      Serial.print("No. of encoder pulses");
+      Serial.println(encpulses);
+      
       }
+      if(
     
 
 }
@@ -36,6 +41,7 @@ void encoder ()
   if ((encoder0PinALast == LOW) && (n == HIGH)) {
     if (digitalRead(encoder0PinB) == LOW) {
       encoder0Pos++;
+      if(encoder0Pos<=encpulses)
     } else {
       encoder0Pos--;//CCW
     }
