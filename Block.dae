@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Unspecified</author>
+      <authoring_tool>FBX COLLADA exporter</authoring_tool>
+      <comments>Converted with CAD Exchanger 3.10.2 (cadexchanger.com)</comments>
+    </contributor>
+    <created>2023-09-30T08:06:40Z</created>
+    <keywords/>
+    <modified>2023-09-30T08:06:40Z</modified>
+    <revision/>
+    <subject/>
+    <title/>
+    <unit meter="1.000000" name="centimeter"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_geometries>
+    <geometry id="Block-lib" name="BlockMesh">
+      <mesh>
+        <source id="Block-POSITION">
+          <float_array id="Block-POSITION-array" count="48">
+0.050000 0.035000 -0.050000
+0.050000 0.005000 -0.050000
+0.050000 0.035000 0.050000
+0.050000 0.005000 0.050000
+-0.030000 0.040000 -0.050000
+-0.030000 0.035000 -0.050000
+-0.030000 0.005000 -0.050000
+-0.030000 0.000000 -0.050000
+-0.050000 0.000000 -0.050000
+-0.050000 0.040000 -0.050000
+-0.030000 0.040000 0.050000
+-0.030000 0.035000 0.050000
+-0.050000 0.040000 0.050000
+-0.050000 0.000000 0.050000
+-0.030000 0.000000 0.050000
+-0.030000 0.005000 0.050000
+</float_array>
+          <technique_common>
+            <accessor source="#Block-POSITION-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Block-Normal0">
+          <float_array id="Block-Normal0-array" count="144">
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#Block-Normal0-array" count="48" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Block-VERTEX">
+          <input semantic="POSITION" source="#Block-POSITION"/>
+        </vertices>
+        <triangles count="28">
+          <input semantic="VERTEX" offset="0" source="#Block-VERTEX"/>
+          <input semantic="NORMAL" offset="1" source="#Block-Normal0"/>
+          <p> 2 2 3 1 1 0 0 3 2 2 1 0 5 11 9 5 4 4 6 8 8 6 9 5 6 8 7 7 8 6 0 10 1 9 6 8 5 11 6 8 9 5 5 11 0 10 6 8 3 14 11 12 15 15 3 14 2 13 11 12 13 17 11 12 12 18 13 17 15 15 11 12 13 17 14 16 15 15 10 19 12 18 11 12 9 22 12 21 10 20 4 23 9 22 10 20 12 26 9 25 8 24 13 27 12 26 8 24 13 30 8 31 7 28 13 30 7 28 14 29 6 34 3 32 15 33 1 35 3 32 6 34 6 38 15 37 14 36 7 39 6 38 14 36 5 42 11 41 2 40 0 43 5 42 2 40 5 46 10 44 11 45 4 47 10 44 5 46</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="" name="">
+      <node name="Block" id="Block" sid="Block">
+        <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+        <instance_geometry url="#Block-lib"/>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>30.000000</frame_rate>
+        </technique>
+        <technique profile="FCOLLADA">
+          <start_time>0.000000</start_time>
+          <end_time>1.000000</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#"/>
+  </scene>
+</COLLADA>
